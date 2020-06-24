@@ -1,6 +1,6 @@
 package by.Andrei_Kviatkouski.service;
 
-import by.Andrei_Kviatkouski.entity.Operation;
+import by.Andrei_Kviatkouski.models.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +12,8 @@ public class CalcService {
     @Autowired
     private List<Operation> operationsList;
 
-    public Double calculator(Double num1, Double num2, String operation) {
-        Double result = 0.0;
+    public double calculator(double num1, double num2, String operation) {
+        double result = 0.0;
         switch (operation) {
             case ("sum"):
                 result = sum(num1, num2);
@@ -62,19 +62,19 @@ public class CalcService {
     }
 
 
-    private Double sum(Double num1, Double num2) {
+    private double sum(double num1, double num2) {
         return num1 + num2;
     }
 
-    private Double minus(Double num1, Double num2) {
+    private double minus(double num1, double num2) {
         return num1 - num2;
     }
 
-    private Double div(Double num1, Double num2) {
+    private double div(double num1, double num2) {
         return num1 / num2;
     }
 
-    private Double multiply(Double num1, Double num2) {
+    private double multiply(double num1, double num2) {
         return num1 * num2;
     }
 }

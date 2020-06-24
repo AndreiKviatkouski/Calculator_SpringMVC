@@ -1,4 +1,4 @@
-package by.Andrei_Kviatkouski;
+package by.Andrei_Kviatkouski.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
-@ComponentScan
+@ComponentScan(basePackages = "by.Andrei_Kviatkouski")
 public class Config {
 
     @Bean

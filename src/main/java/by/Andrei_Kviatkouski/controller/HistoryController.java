@@ -19,7 +19,6 @@ public class HistoryController {
     @GetMapping
     public String history(Model model) {
         List history = calcService.getHistory();
-            System.out.println("History is Empty");
             model.addAttribute("history", history);
             return "history";
         }

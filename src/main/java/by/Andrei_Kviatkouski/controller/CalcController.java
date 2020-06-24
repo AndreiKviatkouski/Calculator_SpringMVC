@@ -22,9 +22,9 @@ public class CalcController {
 
 
     @PostMapping
-    public String calc(Double num1, Double num2, String operation, Model model) {
+    public String calc(double num1, double num2, String operation, Model model) {
         if (num1 != 0 || num2 != 0 || operation != null) {
-            Double result = calcService.calculator(num1, num2, operation);
+            double result = calcService.calculator(num1, num2, operation);
             model.addAttribute("result", result);
         }
         return "calc";

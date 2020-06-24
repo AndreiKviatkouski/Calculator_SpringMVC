@@ -1,4 +1,4 @@
-package by.Andrei_Kviatkouski.entity;
+package by.Andrei_Kviatkouski.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
