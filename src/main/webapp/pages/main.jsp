@@ -1,16 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: andre
-  Date: 22.06.2020
-  Time: 13:51
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <h1>Hello! It's Web Calculator_MVC ver 1.1</h1>
+    <img src=" https://pbs.twimg.com/media/EA-v0BsXUAAIgTy.jpg:large"width="450" height="550">
+    <a href="/history">History |</a>
+    <a href="/reg">Registration |</a>
+    <a href="/auth">Authorisation |</a>
+    <a href="/logout">Logout |</a>
+    <a href="/calc">Calculator |</a>
 </head>
 <body>
-Hello, yore result is ${result}
 </body>
 </html>
