@@ -1,6 +1,6 @@
-package by.Andrei_Kviatkouski.service;
+package by.tms.service;
 
-import by.Andrei_Kviatkouski.models.User;
+import by.tms.models.User;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

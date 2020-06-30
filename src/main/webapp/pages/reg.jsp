@@ -12,7 +12,7 @@
 
     <title>Registration</title>
     <style>
-        body{
+        body {
             background-image: url("https://images.wallpaperscraft.com/image/mountains_river_trees_174732_2560x1600.jpg");
         }
     </style>
@@ -21,21 +21,25 @@
 <div class="container w-25">
     <div class="row mt-5">
         <div class="col-sm">
-            <form action="/user/reg" method="post" >
+            <form action="/user/reg" method="post">
                 <div class="form-group">
                     <label for="exampleInputEmail1">User Name</label>
-                    <input type="text" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <input type="text" name="name" class="form-control" id="exampleInputEmail1"
+                           aria-describedby="emailHelp" required>
                     <small id="num1" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail2">Login</label>
-                    <input type="text" name="login" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" required>
+                    <input type="text" name="login" class="form-control" id="exampleInputEmail2"
+                           aria-describedby="emailHelp" required>
                     <small id="num2" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail3">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp" required>
-                    <small id="operation" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    <input type="password" name="password" class="form-control" id="exampleInputEmail3"
+                           aria-describedby="emailHelp" required>
+                    <small id="operation" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -50,8 +54,6 @@
 </div>
 
 
-
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -63,5 +65,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+
+
+<a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Homepage</a>
+<a href="/user/auth" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Authorization</a>
+
+
 </body>
 </html>

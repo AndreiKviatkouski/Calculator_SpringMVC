@@ -1,4 +1,4 @@
-package by.Andrei_Kviatkouski.service;
+package by.tms.service;
 
 public class UserNotFoundException extends RuntimeException {
     public UserNotFoundException() {

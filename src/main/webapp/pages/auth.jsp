@@ -14,7 +14,7 @@
     <title>Authorization</title>
     <style>
         body{
-            background-image: url("https://images.wallpaperscraft.com/image/mountains_river_trees_174732_2560x1600.jpg");
+            background-image: url("https://images.wallpaperscraft.com/image/mountains_river_trees_174732_2560x1600.jpg") ;
         }
     </style>
 </head>
@@ -65,6 +65,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+<a href="/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Homepage</a>
+<a href="/user/reg" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Registration</a>
+
 </body>
 </html>
 

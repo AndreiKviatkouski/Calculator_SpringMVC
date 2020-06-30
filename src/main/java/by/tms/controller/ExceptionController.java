@@ -1,6 +1,6 @@
-package by.Andrei_Kviatkouski.controller;
+package by.tms.controller;
 
-import by.Andrei_Kviatkouski.service.UserNotFoundException;
+import by.tms.service.UserNotFoundException;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -26,6 +26,6 @@ public class ExceptionController {
     public String ex(UserNotFoundException ex, Model model) {
         String message = ex.getMessage();
         model.addAttribute("error", message);
-        return "userauth";
+        return "auth";
     }
 }

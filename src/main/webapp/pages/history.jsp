@@ -13,10 +13,10 @@
     </ul>
 </form>
 <form action="/calc">
-    <button>Return in Calculator</button>
+    <button>Return Calculator</button>
 </form>
 <form action="/">
-    <button>Return in Homepage</button>
+    <button>Return Homepage</button>
 </form>
 
 </body>

@@ -1,6 +1,6 @@
-package by.Andrei_Kviatkouski.service;
+package by.tms.service;
 
-import by.Andrei_Kviatkouski.models.Operation;
+import by.tms.models.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,35 +12,40 @@ public class CalcService {
     @Autowired
     private List<Operation> operationsList;
 
+
     public double calculator(double num1, double num2, String operation) {
         double result = 0.0;
         switch (operation) {
             case ("sum"):
                 result = sum(num1, num2);
+                addHistory(num1, num2, result, operation);
                 break;
             case ("minus"):
                 result = minus(num1, num2);
+                addHistory(num1, num2, result, operation);
                 break;
             case ("div"):
                 result = div(num1, num2);
+                addHistory(num1, num2, result, operation);
                 break;
             case ("multiply"):
                 result = multiply(num1, num2);
+                addHistory(num1, num2, result, operation);
                 break;
         }
-        addHistory(num1, num2, result, operation);
+
         return result;
     }
 
 
     private void addHistory(double num1, double num2, double result, String operation) {
-            String symbol = symbol(operation);
-            Operation operation1 = new Operation(num1, num2, result, symbol);
-            operationsList.add(operation1);
-        }
+        String symbol = symbol(operation);
+        Operation operation1 = new Operation(num1, num2, result, symbol);
+        operationsList.add(operation1);
+    }
 
 
-    private String symbol(String operation) {
+    public String symbol(String operation) {
 
         switch (operation) {
             case ("sum"):
@@ -54,11 +59,6 @@ public class CalcService {
             default:
                 throw new IllegalStateException("Unexpected value: " + operation);
         }
-    }
-
-
-    public List getHistory() {
-        return operationsList;
     }
 
 

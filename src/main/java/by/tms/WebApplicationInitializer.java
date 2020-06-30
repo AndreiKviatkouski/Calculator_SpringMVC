@@ -1,6 +1,6 @@
-package by.Andrei_Kviatkouski;
+package by.tms;
 
-import by.Andrei_Kviatkouski.configuration.Config;
+import by.tms.configuration.Config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class WebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
