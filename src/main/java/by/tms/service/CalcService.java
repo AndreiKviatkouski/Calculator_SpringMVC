@@ -1,11 +1,16 @@
 package by.tms.service;
 
 import by.tms.models.Operation;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Service
 public class CalcService {
 
