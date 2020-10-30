@@ -5,10 +5,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalcServiceTest {
 
     @org.junit.jupiter.api.Test
-    void calculator() {
+    void calculator()throws Exception {
+        assertEquals(17,15,30,symbol());
+    }
+
+    private void assertEquals(int i, int i1, int i2, String symbol) {
     }
 
     @org.junit.jupiter.api.Test
-    void symbol() {
+     String symbol(){
+       return "sum"; 
+    }
+
+    private void assertEquals(String sum) {
     }
 }

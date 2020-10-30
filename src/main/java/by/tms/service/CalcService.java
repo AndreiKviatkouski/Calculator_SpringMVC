@@ -45,7 +45,7 @@ public class CalcService {
 
     private void addHistory(double num1, double num2, double result, String operation) {
         String symbol = symbol(operation);
-        Operation operation1 = new Operation(num1, num2, result, symbol);
+        Operation operation1 = new Operation(num1, num2, result, operation);
         operationsList.add(operation1);
     }
 
